@@ -142,7 +142,7 @@ Ensure .env exists with ClickHouse credentials:
 
 ```bash
 CLICKHOUSE_USER=analytic
-CLICKHOUSE_PASSWORD=your_password_here
+CLICKHOUSE_PASSWORD=pass**rd
 CLICKHOUSE_DB=amazon
 CLICKHOUSE_HOST=127.0.0.1
 CLICKHOUSE_PORT=8123
