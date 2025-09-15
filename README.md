@@ -1,4 +1,4 @@
-# Amazon Reviews Analysis Project
+# BNR CHAllenge
 
 This repository contains scripts and instructions to **ingest Amazon product reviews into ClickHouse**, perform **data analysis**, and visualize insights. The project uses **Docker**, **ClickHouse**, and **Python 3.10** with Polars for high-performance data handling.
 
