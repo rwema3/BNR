@@ -107,4 +107,23 @@ Verify ClickHouse is running:
 docker ps
 ```
 
+## Python Virtual Environment
+
+```bash
+# Navigate to project directory
+cd /path/to/project
+
+# Create virtual environment
+python3.10 -m venv venv
+
+# Activate virtual environment
+source venv/bin/activate
+
+# Upgrade pip
+pip install --upgrade pip
+
+# Install required packages
+pip install polars matplotlib clickhouse-connect dbutils
+```
+
 
