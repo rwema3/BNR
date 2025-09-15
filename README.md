@@ -91,8 +91,20 @@ services:
 volumes:
   clickhouse_data:
 ```
+## Create a .env file for credentials:
 
-
-
+```bash
+CLICKHOUSE_USER=analytic
+CLICKHOUSE_PASSWORD=your_password_here
+CLICKHOUSE_DB=amazon
+```
+Run ClickHouse:
+```bash
+docker compose up -d
+```
+Verify ClickHouse is running:
+```bash
+docker ps
+```
 
 
