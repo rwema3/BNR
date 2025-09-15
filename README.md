@@ -126,4 +126,58 @@ pip install --upgrade pip
 pip install polars matplotlib clickhouse-connect dbutils
 ```
 
+### Install Utilities
+
+Clone the dbutils repository and install:
+
+```bash
+git clone https://github.com/your-org/dbutils.git
+cd dbutils
+pip install .
+```
+
+## Data Ingestion
+
+### Configure Environment Variables
+
+Ensure .env exists with ClickHouse credentials:
+
+```bash
+CLICKHOUSE_USER=analytic
+CLICKHOUSE_PASSWORD=your_password_here
+CLICKHOUSE_DB=amazon
+CLICKHOUSE_HOST=127.0.0.1
+CLICKHOUSE_PORT=8123
+```
+
+##Run Ingestion Script
+
+```bash
+# Activate virtual environment
+source venv/bin/activate
+
+# Run ingestion
+python dataingestion.py
+```
+
+### Analysis & Visualization
+
+To execute analyses and visualize results:
+
+```bash
+# Activate virtual environment
+source venv/bin/activate
+
+# Run analysis script
+python analysis_visualization.py
+```
+
+# And that's It :)
+
+
+
+
+
+
+
 
