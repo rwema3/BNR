@@ -17,8 +17,6 @@ This repository contains scripts and instructions to **ingest Amazon product rev
     - [Configure Environment Variables](#configure-environment-variables)  
     - [Run Ingestion Script](#run-ingestion-script)  
 5. [Analysis & Visualization](#analysis--visualization)  
-6. [Reproducing Results](#reproducing-results)  
-7. [License](#license)  
 
 ---
 
