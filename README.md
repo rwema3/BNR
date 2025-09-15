@@ -69,3 +69,30 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 # Verify installation
 docker --version
 docker compose version
+```
+### Docker Compose for ClickHouse
+
+Create a docker-compose.yml:
+```bash
+version: '3.8'
+
+services:
+  clickhouse:
+    image: clickhouse/clickhouse-server:latest
+    container_name: clickhouse
+    ports:
+      - "8123:8123"  # HTTP
+      - "9000:9000"  # Native
+    volumes:
+      - clickhouse_data:/var/lib/clickhouse
+    env_file:
+      - .env
+
+volumes:
+  clickhouse_data:
+```
+
+
+
+
+
